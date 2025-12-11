@@ -1,12 +1,13 @@
 import java.util.*;
+
 public class Hello {
-    public static void main(String args[]){
+    public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
 
         // int a = 5;
         // a = 10;
         // System.out.print("The value of a: " + a);
-        
+
         // int $ = 24;
         // System.out.println($);
 
@@ -33,7 +34,7 @@ public class Hello {
         // System.out.print("Enter the value of c: ");
         // int c = sc.nextInt();
         // double sum = a + b + c;
-        // double gst =  sum * 0.18;
+        // double gst = sum * 0.18;
         // System.out.println("The average of a, b and c is: " + sum / 3 );
         // System.out.println("The total price after GST is: " + (sum + gst));
 
@@ -49,66 +50,66 @@ public class Hello {
         // System.out.print("Enter the value of C: ");
         // int c = sc.nextInt();
         // if(a >= b && a > c) {
-        //     System.out.println("A: " + a + " is the greatest number.");
+        // System.out.println("A: " + a + " is the greatest number.");
         // } else if (b > c) {
-        //     System.out.println("B: " + b + " is the greatest number.");
+        // System.out.println("B: " + b + " is the greatest number.");
         // } else{
-        //     System.out.println("C: " + c + " is the greatest number.");
+        // System.out.println("C: " + c + " is the greatest number.");
         // }
 
         // System.out.print("Enter the value of n: ");
         // int n = sc.nextInt();
-        // System.out.print((n % 2 == 0) ? n +  " is Even." : n + " is Odd.");
+        // System.out.print((n % 2 == 0) ? n + " is Even." : n + " is Odd.");
 
         // System.out.print("Week no :");
         // int n = sc.nextInt();
         // switch(n) {
-        //     case 1:
-        //     System.out.println("Monday");
-        //     break;
+        // case 1:
+        // System.out.println("Monday");
+        // break;
 
-        //     case 2:
-        //     System.out.println("Tuesday");
-        //     break;
+        // case 2:
+        // System.out.println("Tuesday");
+        // break;
 
-        //     case 3:
-        //     System.out.println("Wednesday");
-        //     break;
+        // case 3:
+        // System.out.println("Wednesday");
+        // break;
 
-        //     case 4:
-        //     System.out.println("Thursday");
-        //     break;
+        // case 4:
+        // System.out.println("Thursday");
+        // break;
 
-        //     case 5:
-        //     System.out.println("Friday");
-        //     break;
+        // case 5:
+        // System.out.println("Friday");
+        // break;
 
-        //     case 6:
-        //     System.out.println("Saturday");
-        //     break;
+        // case 6:
+        // System.out.println("Saturday");
+        // break;
 
-        //     case 7:
-        //     System.out.println("Sunday");
-        //     break;
+        // case 7:
+        // System.out.println("Sunday");
+        // break;
 
-        //     default:
-        //     System.out.println("Invalid week number.");
+        // default:
+        // System.out.println("Invalid week number.");
         // }
 
         // System.out.print("Enter the value of n: ");
         // int n = sc.nextInt();
         // if (n < 0){
-        //     System.out.println(n + " is Negative");
+        // System.out.println(n + " is Negative");
         // } else {
-        //     System.out.println(n + " is Positive");
+        // System.out.println(n + " is Positive");
         // }
 
         // System.out.print("Enter your temperature: ");
         // double temp = sc.nextDouble();
         // if(temp > 100) {
-        //     System.out.println("You have FEVER.");
+        // System.out.println("You have FEVER.");
         // } else {
-        //     System.out.println("You don't have FEVER.");
+        // System.out.println("You don't have FEVER.");
         // }
 
         // System.out.print("Enter the value of n: ");
@@ -116,33 +117,33 @@ public class Hello {
         // int sum = 0;
         // int counter = 1;
         // if(n < 1) {
-        //     System.out.println("You entered negative number.");
+        // System.out.println("You entered negative number.");
         // } else {
-        //     while (counter <= n ) {
-        //         sum += counter;
-        //         counter++;
-        //     }
+        // while (counter <= n ) {
+        // sum += counter;
+        // counter++;
+        // }
         // System.out.println("Sum of N natural numbers is: " + sum);
         // }
 
         // System.out.print("Enter the value of n: ");
         // int n = sc.nextInt();
         // for(int i = 0; i < n; i++) {
-        //     for(int j = 0; j < n; j++) {
-        //         System.out.print("* ");
-        //     }
-        //     System.out.println();  
+        // for(int j = 0; j < n; j++) {
+        // System.out.print("* ");
+        // }
+        // System.out.println();
         // }
 
-        // System.out.print("Enter the value of n: ");
-        // int n = sc.nextInt();
-        // int reverse = 0;
-        // while(n > 0){
-        //     int lastDigit = n % 10;
-        //     n = n / 10;
-        //     reverse = (reverse * 10) + lastDigit;
-        // }
-        // System.out.print(reverse);
+        System.out.print("Enter the value of n: ");
+        int n = sc.nextInt();
+        int reverse = 0;
+        while (n > 0) {
+            int lastDigit = n % 10;
+            n = n / 10;
+            reverse = (reverse * 10) + lastDigit;
+        }
+        System.out.print("The reversed number is: " + reverse);
 
         sc.close();
     }
