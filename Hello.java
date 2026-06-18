@@ -96,31 +96,26 @@ public class Hello {
         // System.out.println("You don't have FEVER.");
         // }
 
-        // System.out.print("Enter the value of n: ");
-        // int n = sc.nextInt();
+        // int n;
         // int sum = 0;
         // int counter = 1;
-        // if(n < 1) {
-        //     if(n == 0){
-        //         System.out.println("You entered zero.");
+        // do {          
+        //     System.out.print("Enter the value of n: ");
+        //     n = sc.nextInt();  
+        //     if(n < 1) {
+        //         if(n == 0){
+        //             System.out.println("You entered zero.");
+        //         } else {
+        //             System.out.println("You entered negative number.");
+        //         }
+        //     } else {
+        //         while (counter <= n ) {
+        //             sum += counter;
+        //             counter++;
+        //         }
+        //         System.out.println("Sum of n natural numbers is: " + sum);
         //     }
-        //     System.out.println("You entered negative number.");
-        // } else {
-        //     while (counter <= n ) {
-        //         sum += counter;
-        //         counter++;
-        //     }
-        // System.out.println("Sum of N natural numbers is: " + sum);
-        // }
-
-        // System.out.print("Enter the value of n: ");
-        // int n = sc.nextInt();
-        // for(int i = 0; i < n; i++) {
-        // for(int j = 0; j < n; j++) {
-        // System.out.print("* ");
-        // }
-        // System.out.println();
-        // }
+        // } while(n <= 0);
 
         sc.close();
     }
