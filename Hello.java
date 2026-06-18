@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class Hello {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
@@ -64,36 +63,21 @@ public class Hello {
         // System.out.print("Week no :");
         // int n = sc.nextInt();
         // switch(n) {
-        // case 1:
-        // System.out.println("Monday");
+        // case 1: System.out.println("Monday");
         // break;
-
-        // case 2:
-        // System.out.println("Tuesday");
+        // case 2: System.out.println("Tuesday");
         // break;
-
-        // case 3:
-        // System.out.println("Wednesday");
+        // case 3: System.out.println("Wednesday");
         // break;
-
-        // case 4:
-        // System.out.println("Thursday");
+        // case 4: System.out.println("Thursday");
         // break;
-
-        // case 5:
-        // System.out.println("Friday");
+        // case 5: System.out.println("Friday");
         // break;
-
-        // case 6:
-        // System.out.println("Saturday");
+        // case 6: System.out.println("Saturday");
         // break;
-
-        // case 7:
-        // System.out.println("Sunday");
+        // case 7: System.out.println("Sunday");
         // break;
-
-        // default:
-        // System.out.println("Invalid week number.");
+        // default:System.out.println("Invalid week number.");
         // }
 
         // System.out.print("Enter the value of n: ");
@@ -117,12 +101,15 @@ public class Hello {
         // int sum = 0;
         // int counter = 1;
         // if(n < 1) {
-        // System.out.println("You entered negative number.");
+        //     if(n == 0){
+        //         System.out.println("You entered zero.");
+        //     }
+        //     System.out.println("You entered negative number.");
         // } else {
-        // while (counter <= n ) {
-        // sum += counter;
-        // counter++;
-        // }
+        //     while (counter <= n ) {
+        //         sum += counter;
+        //         counter++;
+        //     }
         // System.out.println("Sum of N natural numbers is: " + sum);
         // }
 
@@ -134,16 +121,6 @@ public class Hello {
         // }
         // System.out.println();
         // }
-
-        System.out.print("Enter the value of n: ");
-        int n = sc.nextInt();
-        int reverse = 0;
-        while (n > 0) {
-            int lastDigit = n % 10;
-            n = n / 10;
-            reverse = (reverse * 10) + lastDigit;
-        }
-        System.out.print("The reversed number is: " + reverse);
 
         sc.close();
     }
