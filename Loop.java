@@ -1,8 +1,16 @@
 import java.util.*;
 
 public class Loop {
+    public static void table(int number){
+        for(int i = 1; i <= 10; i++){
+            System.out.println(number + " X " + i + " = " + (number * i));
+        }
+    }
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
+
+        // table(19);
+
         
         // for(int i = 1; i <= 4; i++){
         //     for(int j = 1; j <= 4; j++){
@@ -48,27 +56,24 @@ public class Loop {
         // System.out.println("The sum of even numbers is: " + evenSum);
         // System.out.println("The sum of odd numbers is: " + oddSum);
 
-        // int n;
-        // int factorial = 1;
-        // do{
-        //     System.out.print("Enter the number: ");
-        //     n = sc.nextInt();
-        //     if(n < 0){
-        //         System.out.println("Factorial is not defined for negative numbers.");
-        //     }
-        //     else if(n == 0 || n == 1){
-        //         factorial = 1;
-        //     }
-        //     else {
-        //         for(int i = 1; i <= n; i++){
-        //             factorial *= i;
-        //         }
-        //     }
-        // } while(n < 0);
-        // System.out.println("The factorial of " + n + " is: " + factorial);
-
-        // System.out.print("Enter the number: ");
-        // int n = sc.nextInt();
+        int n;
+        int factorial = 1;
+        do{
+            System.out.print("Enter the number: ");
+            n = sc.nextInt();
+            if(n < 0){
+                System.out.println("Factorial is not defined for negative numbers.");
+            }
+            else if(n == 0 || n == 1){
+                factorial = 1;
+            }
+            else {
+                for(int i = 1; i <= n; i++){
+                    factorial *= i;
+                }
+            }
+        } while(n < 0);
+        System.out.println("The " + n + "! is: " + factorial);
 
         sc.close();
     }
