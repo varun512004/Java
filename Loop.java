@@ -19,15 +19,15 @@ public class Loop {
         //     System.out.println();
         // }
         
-        // System.out.print("Enter the value of n: ");
-        // int n = sc.nextInt();
-        // int reverse = 0;
-        // while (n > 0) {
-        //     int lastDigit = n % 10;
-        //     n /= 10;
-        //     reverse = (reverse * 10) + lastDigit;
-        // }
-        // System.out.print("The reversed number is: " + reverse);
+        System.out.print("Enter the value of n: ");
+        int n = sc.nextInt();
+        int reverse = 0;
+        while (n > 0) {
+            int lastDigit = n % 10;
+            n /= 10;
+            reverse = (reverse * 10) + lastDigit;
+        }
+        System.out.print("The reversed number is: " + reverse);
 
         // int choice;
         // do {
@@ -56,24 +56,24 @@ public class Loop {
         // System.out.println("The sum of even numbers is: " + evenSum);
         // System.out.println("The sum of odd numbers is: " + oddSum);
 
-        int n;
-        int factorial = 1;
-        do{
-            System.out.print("Enter the number: ");
-            n = sc.nextInt();
-            if(n < 0){
-                System.out.println("Factorial is not defined for negative numbers.");
-            }
-            else if(n == 0 || n == 1){
-                factorial = 1;
-            }
-            else {
-                for(int i = 1; i <= n; i++){
-                    factorial *= i;
-                }
-            }
-        } while(n < 0);
-        System.out.println("The " + n + "! is: " + factorial);
+        // int n;
+        // int factorial = 1;
+        // do{
+        //     System.out.print("Enter the number: ");
+        //     n = sc.nextInt();
+        //     if(n < 0){
+        //         System.out.println("Factorial is not defined for negative numbers.");
+        //     }
+        //     else if(n == 0 || n == 1){
+        //         factorial = 1;
+        //     }
+        //     else {
+        //         for(int i = 1; i <= n; i++){
+        //             factorial *= i;
+        //         }
+        //     }
+        // } while(n < 0);
+        // System.out.println("The " + n + "! is: " + factorial);
 
         sc.close();
     }
