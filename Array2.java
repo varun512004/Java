@@ -96,6 +96,56 @@ public class Array2 {
         }
         return maxProfit;
     }
+
+    public static boolean duplicate(int arr[]) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public static int search(int arr[], int target) {
+        int start = 0;
+        int end = arr.length - 1;
+        while (start <= end) {
+            int mid = (start + end) / 2;
+            if (arr[mid] == target) {    // {4, 5, 6, 7, 0, 1, 2} => 0
+                return mid;
+            }
+            if (arr[start] <= arr[mid]) {
+                if (target >= arr[start] && target <= arr[mid]) {
+                    end = mid - 1;
+                } else {
+                    start = mid + 1;
+                }
+            }
+            else {
+                if (target >= arr[mid] && target <= arr[end]) {
+                    end = mid - 1;
+                } else {
+                    start = mid + 1;
+                }
+            }
+        }
+        return -1;
+    }
+
+    public static void threeSum (int nums[]) {      //{-1, 0,  1, 2, -1, -4};
+        int n = nums.length;
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
+                for (int k = j + 1; k < n; k++) {
+                    if (nums[i] + nums[j] + nums[k] == 0) {
+                        System.out.println("Triplet is: [" + nums[i] + ", " + nums[j] + ", " + nums[k] + "]");
+                    }
+                }
+            }
+        }
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // int arr[] = {2, -4, 6, -8, 10};
@@ -108,8 +158,21 @@ public class Array2 {
         // int width[] = {1, 2, 3, 4, 5, 6, 7};
         // System.out.println("The Trapped Rain Water is: " + trappedWater(height, width) + ".");
 
-        int prices[] = {7, 1, 5, 3, 6, 4};
-        System.out.println("The Maximum Profit is: " + buyAndSell(prices) + ".");
+        // int prices[] = {7, 1, 5, 3, 6, 4};
+        // System.out.println("The Maximum Profit is: " + buyAndSell(prices) + ".");
+
+        // int arr[] = {2, 4, 3, 4, 5, 3, 6, 7};
+        // System.out.println(
+        //     duplicate(arr) ? "In the array values are appearing atleast twice."
+        //                     : "In the array values are not appearing twice.");
+
+        // int arr[] = {4, 5, 6, 7, 0, 1, 2};
+        // // int arr[] = {0, 1, 2, 3, 4, 5, 6};
+        // int target = 0;
+        // System.out.println("Index of target element: " + search(arr, target));
+
+        int nums[] = {-1, 0,  1, 2, -1, -4};
+        threeSum(nums);
 
         sc.close();
     }
