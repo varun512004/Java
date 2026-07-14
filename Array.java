@@ -10,7 +10,6 @@ public class Array {
         System.out.println();
         System.out.println(x);
     }
-
     public static int linearSearchInt (int arr[], int key) { //For integer array
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == key) {
@@ -19,7 +18,6 @@ public class Array {
         }
         return -1;
     }
-
     public static String linearSearchStr (String fruits[], String key) { //For string array
         for (int i = 0; i < fruits.length; i++) {
             if (fruits[i] == key) {
@@ -43,7 +41,6 @@ public class Array {
         System.out.println("The largest element in the array is: " + largest);
         System.out.println("The smallest element in the array is: " + smallest);
     }
-
     public static int binSearch (int arr[], int key) { //Binary Search
         int start = 0; int end = arr.length-1;
         while (start <= end) {
@@ -59,7 +56,6 @@ public class Array {
         }
         return -1;
     }
-
     public static void reverse (int arr[]) {
         //1. Using for loop
         for (int i = 0; i < (arr.length - 1) / 2; i++) {
@@ -80,7 +76,6 @@ public class Array {
         }
         System.out.println("The reverse array: " + Arrays.toString(arr));
     }
-
     public static void printPairs (int arr[]) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length; j++) {
