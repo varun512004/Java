@@ -18,15 +18,14 @@ public class Array {
         }
         return -1;
     }
-    public static String linearSearchStr (String fruits[], String key) { //For string array
+    public static int linearSearchStr (String fruits[], String key) { //For string array
         for (int i = 0; i < fruits.length; i++) {
-            if (fruits[i] == key) {
-                return String.valueOf(i);
+            if (key.equals(fruits[i])) {
+                return i;
             }
         }
-        return "-1";
+        return -1;
     }
-
     public static void findLargestAndSmallest (int arr[]) { //Linear search
         int largest = Integer.MIN_VALUE;
         int smallest = Integer.MAX_VALUE;
@@ -116,15 +115,14 @@ public class Array {
         //     System.out.println(key + " is not in the array.");
         // }
 
-        // String fruits[] = {"apple", "mango", "banana"};
-        // System.out.print("Enter the key value: ");
-        // String key = sc.nextLine();
-        // String index = linearSearchStr(fruits, key);
-        // if (index != "-1") {
-        //     System.out.println(key + " is in the array");
-        // } else {
-        //     System.out.println(key + " is not in the array.");
-        // }
+        String fruits[] = {"apple", "mango", "banana"};
+        System.out.print("Enter the key value: ");
+        String key = sc.nextLine();
+        if (linearSearchStr(fruits, key) != -1) {
+            System.out.println(key + " is in the array");
+        } else {
+            System.out.println(key + " is not in the array.");
+        }
 
         // int arr[] = {2, 4, 6, 3, 1, 7, 9, 0, 5, 8};
         // findLargestAndSmallest(arr);
@@ -142,8 +140,8 @@ public class Array {
         // int arr[] = {2, 5, 9, 14, 17, 21, 26, 30, 34, 39};
         // reverse(arr);
 
-        int arr[] = {2, 4, 6, 8, 10};
-        printPairs(arr);
+        // int arr[] = {2, 4, 6, 8, 10};
+        // printPairs(arr);
 
         sc.close();
     }
